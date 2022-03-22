@@ -22,8 +22,8 @@ test('Teste se o topo da aplicação contém um conjunto fixo de links de navega
   // expect(hometTitle).toBeInTheDocument();
 
   // About
-  const homeAbout = screen.getByRole('link', { name: /about/i });
-  expect(homeAbout).toBeInTheDocument();
+  const aboutLink = screen.getByRole('link', { name: /about/i });
+  expect(aboutLink).toBeInTheDocument();
 
   // userEvent.click(homeAbout);
   // expect(pathname).toBe('/about');
@@ -32,8 +32,8 @@ test('Teste se o topo da aplicação contém um conjunto fixo de links de navega
   // expect(aboutTitle).toBeInTheDocument();
 
   // Favorite
-  const homeFavorite = screen.getByRole('link', { name: /favorite pokémons/i });
-  expect(homeFavorite).toBeInTheDocument();
+  const favoriteLink = screen.getByRole('link', { name: /favorite pokémons/i });
+  expect(favoriteLink).toBeInTheDocument();
 
   // userEvent.click(homeFavorite);
   // expect(pathname).toBe('/favorites');
